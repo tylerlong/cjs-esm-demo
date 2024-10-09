@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import dotenv from 'dotenv-override-true';
+import * as dotenv from 'dotenv-override-true';
 
 import add from '../src/index';
 

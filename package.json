@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "license": "UNLICENSED",
+  "type": "module",
   "scripts": {
     "demo": "tsx -r dotenv-override-true/config src/demo.ts",
-    "lint": "tsc --jsx react --skipLibCheck --noEmit --target ESNext --moduleResolution NodeNext --module NodeNext ./src/*.ts && eslint . --fix && prettier --write . && sort-package-json",
+    "lint": "tsc --skipLibCheck --noEmit ./**/*.ts && eslint . --fix && prettier --write . && sort-package-json",
     "test": "vitest run"
   },
   "devDependencies": {
