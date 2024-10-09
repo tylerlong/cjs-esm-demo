@@ -5,7 +5,7 @@
   "license": "UNLICENSED",
   "type": "module",
   "scripts": {
-    "lint": "tsc --skipLibCheck --noEmit ./**/*.ts && eslint . --fix && prettier --write . && sort-package-json",
+    "lint": "tsc --skipLibCheck --noEmit --jsx react --esModuleInterop ./**/*.ts ./**/*.tsx && eslint . --fix && prettier --write . && sort-package-json",
     "serve": "rm -rf .parcel-cache && parcel src/index.html --dist-dir docs"
   },
   "devDependencies": {
